@@ -1,0 +1,24 @@
+<nav>
+    <div>
+        <p class="nav-title">Student Management Application</p>
+    </div>
+    <div>
+        <ul class="nav-list">
+            <li><a href="{% url 'Home' %}"><i class="fa fa-home"></i>Home</a></li>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'Student_List' %}"><i class="fa fa-user"></i>Student_List</a></li>
+            <li>
+                <form method="POST" action="{% url 'Logout' %}">
+                    {% csrf_token %}
+                    <button type="submit" style="border-radius: 10px; height: 20px; width: 75px; background-color: black;color: white;">Logout</button>
+                </form>
+            </li>
+            
+            {% else %}
+            <li><a href="{% url 'Login' %}"><i class="fa fa-user"></i>Admin_login</a></li>
+            <li><a href="{% url 'Register' %}"><i class="fa fa-edit"></i>Register</a></li>
+            {% endif %}
+            
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,17 @@
+{% extends "Html_basic.html" %}
+{% block content %}
+<div class="Home">
+    {% if user.is_authenticated %}
+    <h1>Hi {{user.username}}</h1>
+    <h4>Your Account Logging Successfully!</h4>
+    {% else %}
+    <div>
+        <h1>Welcome To</h1>
+        <h3>Student Management Application</h3>
+        <h5>Let's Start Your Operation<a href="{% url 'Login' %}"> Login</a><a href="{% url 'Register' %}"> Register</a></h5>
+    </div>
+    {% endif %}
+    
+    
+</div>
+{% endblock %}

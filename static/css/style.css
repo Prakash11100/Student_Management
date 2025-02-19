@@ -1,0 +1,106 @@
+body{
+    background-color: blanchedalmond;
+}
+.Home{
+    text-align: center;
+    margin-top: 100px;
+}
+nav{
+    background-color: gray;
+    box-shadow: 3px 5px 3px black;
+    display: flex;
+    gap: 100;
+    
+}
+.nav-title{
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+    
+}
+.nav-list{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-top: 23px;
+    margin-left: 600px;
+}
+.nav-list li a{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    color: black;   
+    cursor: pointer;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    color: yellow;      
+}
+.form{
+    background-color: yellowgreen;
+    color: black;
+    font-family: Cambria;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: large;
+    box-shadow: 3px 5px 3px black;
+}
+.Operation{
+    display: flex;
+    text-decoration: none;
+}
+.Operation-form{
+    display: flex;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    background-color: lightskyblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Operation-data{
+    display: flex;
+    text-decoration: none;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+.Operation-data table{
+    text-align: center;
+    border-collapse: collapse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.update-button{
+    text-decoration: none;
+    background-color: green;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+.delete-button{
+    text-decoration: none;
+    background-color:red;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+
